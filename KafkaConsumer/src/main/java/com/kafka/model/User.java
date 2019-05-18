@@ -1,7 +1,9 @@
+
 package com.kafka.model;
 
 public class User {
 
+	
 	private String name;
 	private String company;
 	private String email;
@@ -41,12 +43,14 @@ public class User {
 		this.email = email;
 	}
 
+
 	@Override
 	public String toString() {
-		System.out.println("devolop branch.......test");
+		System.out.println("devolop branch");
 		return "User [name=" + name + ", company=" + company + ", email=" + email + "]";
-	}
+  }
 	
 	
 
 }
+
