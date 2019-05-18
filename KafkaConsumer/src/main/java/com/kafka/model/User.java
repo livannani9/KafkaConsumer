@@ -2,6 +2,7 @@ package com.kafka.model;
 
 public class User {
 
+	
 	private String name;
 	private String company;
 	private String email;
@@ -43,6 +44,7 @@ public class User {
 
 	@Override
 	public String toString() {
+		
 		return "User [name=" + name + ", company=" + company + ", email=" + email + "]";
 	}
 	
