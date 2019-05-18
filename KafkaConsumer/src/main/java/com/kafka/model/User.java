@@ -41,6 +41,13 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
+
+	@Override
+	public String toString() {
+		System.out.println("devolop branch");
+		return "User [name=" + name + ", company=" + company + ", email=" + email + "]";
+  }
 	
 	
 
