@@ -9,10 +9,17 @@ import com.kafka.model.User;
 public class KafkaUserConsumer {
 
 	
-	@KafkaListener(topics = "livan_test", groupId = "group_json",
-			containerFactory = "factory")
+	@KafkaListener(topics = "livan_string", groupId = "group_id")
+	public void usercomsumer(String name) {
+
+		System.out.println("Comsumed string data from kafka : "+name);
+	}
+	
+	@KafkaListener(topics = "livan_json", groupId = "group_json",
+			containerFactory = "userfactory")
 	public void usercomsumer(User user) {
 
-		System.out.println("Comsumed data from kafka : "+user);
+		System.out.println("Comsumed json data from kafka : "+user);
 	}
+		
 }
